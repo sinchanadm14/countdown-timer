@@ -1,36 +1,41 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COUNTDOWN-TIMER</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Countdown Timer</h1>
-  <label for="date" >Select Date</label>
-  <input type="date" id="date"><br>
-  <label for="time">Select Time</label>
-  <input type="time" id="'time"> <br>
+    <h1>Countdown Timer</h1><br><br>
+  <label for="date" >Select Date:</label>
+  <input type="date" id="date"><br><br>
+  <label for="time">Select Time:</label>
+  <input type="time" id="'time"> <br><br>
+
   <button id="start">Start Timer</button>
-  <button id="Pause">Pause Timer</button>
+  <button id="pause">Pause Timer</button>
   <button id="reset">Reset Timer</button>
-  <br>
-  <div >
+  <br><br><br>
+  <div>
+  <div class="box">
     <span id="'days">00</span>
     <p>Days</p>
   </div>
-  <div >
+  <div class="box">
     <span id="hours">00</span>
     <p>Hours</p>
   </div>
-  <div >
+  <div class="box">
     <span id="minutes">00</span>
     <p>Minutes</p>
   </div>
-  <div >
+  <div class="box">
     <span id="seconds">00</span>
     <p>seconds</p>
   </div>
-  <p><b>Timer Completed</b></p>
+  </div>
+  <br><br>
+  <h4><b>Timer Completed!</b></h4>
 </body>
 </html>
