@@ -119,7 +119,22 @@ resetButton.addEventListener("click", function () {
     seconds.textContent = "00";
     document.getElementById("date").value = "";
     document.getElementById("time").value = "";
+    localStorage.removeItem("date");
+    localStorage.removeItem("time");
     pauseButton.textContent = "Pause Timer";
     completionMessage.style.display = "none";
     alert("Timer Reset!");
+});
+document.getElementById("date").addEventListener("change", function () {
+    localStorage.setItem("date", this.value);
+});
+
+document.getElementById("time").addEventListener("change", function () {
+    localStorage.setItem("time", this.value);
+});
+
+
+window.addEventListener("load", function () {
+    document.getElementById("date").value = localStorage.getItem("date") || "";
+    document.getElementById("time").value = localStorage.getItem("time") || "";
 });
